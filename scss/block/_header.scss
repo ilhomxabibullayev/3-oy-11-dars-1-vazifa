@@ -1,0 +1,46 @@
+.header-dicuration {
+    background-color: hsl(181, 100%, 41%);
+    color: white;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.header {
+    padding: 20px;
+
+    .header__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .header__logo {
+            width: 40px;
+        }
+
+        .header__list {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .header__link {
+                color: #000;
+
+                &:hover {
+                    color: hsl(181, 100%, 41%);
+                }
+            }
+
+            
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        padding: 10px 30px;
+
+        .header__link {
+            display: none;
+        }
+    }
+}
